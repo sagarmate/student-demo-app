@@ -1,0 +1,13 @@
+<div class="row">
+
+    <div class="col-sm-6">
+      <h1>Student Details !</h1><hr>
+      <app-student (studentDataAdded)="studentDataRecived($event)"></app-student>
+    </div>
+
+    <div class="col-sm-6">
+      <h1>Student-List Goes Here !</h1><hr>
+      <app-student-list *ngFor="let student of consoleService.studentData" [student]=student></app-student-list>
+    </div>
+
+  </div>

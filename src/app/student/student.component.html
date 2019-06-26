@@ -1,0 +1,28 @@
+<!-- <input type="text" name="" (input)="texteneter($event)"> <hr> -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="my-input">Id</label>
+              <input type="text" class="form-control" [(ngModel)]="no" >
+            </div>
+            <div class="form-group">
+              <label for="my-input">Name</label>
+              <input type="text" class="form-control" [(ngModel)]="name" >
+            </div>
+            <button class="btn btn-primary" (click)="btnclicked()" [disabled]="showbtn">Add Student</button>
+          </div>
+            <div class="panel-heading" *ngIf="no || name">
+                <h3>Roll No : {{no}} . {{name}}</h3>
+            </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+

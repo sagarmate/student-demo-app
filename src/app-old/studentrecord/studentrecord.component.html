@@ -1,0 +1,22 @@
+  <div class="form">
+
+    <div class="form-group">
+      <label>Student Name </label>
+      <input class="form-control" type="number" [(ngModel)]="rollNo">
+    </div>
+
+    <div class="form-group">
+      <label>First Name</label>
+      <input class="form-control" type="text" [(ngModel)]="fname">
+    </div>
+
+  <div class="form-group">
+    <label>Last Name</label>
+    <input class="form-control" type="text"  [(ngModel)]="lname">
+  </div>
+
+   .<button class="btn btn-primary btn-lg" (click)="addStudent()" >Add Student</button>.
+   <button class="btn btn-primary btn-lg" (click)="clearData()">Clear Data</button>
+  </div>
+  {{this.studentDB}}
+

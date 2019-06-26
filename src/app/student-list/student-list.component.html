@@ -1,0 +1,13 @@
+
+<div class="panel"
+[ngClass]="{
+  'panel-success' : student.no == 1,
+  'panel-danger' : student.no == 2,
+  'panel-info' : student.no == 3,
+  'panel-default' : student.no > 3
+}">
+
+  <div class="panel-heading"> {{student.no}} </div>
+  <div class="panel-body"> {{student.name}} </div>
+</div>
+<hr>
